@@ -7,7 +7,7 @@
 
 <h5> About the Experiment : </h5>
 
-This experiment is about the anatomy of FDM 3D printer. Different parts of the 3D printer and their functions is explained.
+This experiment is about the delta 3D printer. Different parts of the delta 3D printer and their functions is explained.
 
 <h5> Target Audience : </h5>
 
