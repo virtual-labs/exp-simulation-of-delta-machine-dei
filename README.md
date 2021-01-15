@@ -1,13 +1,13 @@
 ## Introduction (Round 0)
-<br>
+
 <b>Discipline | <b>Engineering 
 :--|:--| 
 <b> Lab | <b> 3D Printing
-<b> Experiment|     <b> 1. Simulation of anatomy of FDM 3D printer
+<b> Experiment|     <b> 4. Simulation of Delta 3D Printing machine
 
 <h5> About the Experiment : </h5>
 
-This experiment is about the delta 3D printer. Different parts of the delta 3D printer and their functions is explained.
+This experiment is about the construction and assembly of FDM delta 3D printer. Different parts of the 3D printer and their functions and assembly are explained.
 
 <h5> Target Audience : </h5>
 
