@@ -1,407 +1,61 @@
-<html>
-<head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title> Virtual Labs </title>
-        <!-- Tell the browser to be responsive to screen width -->
-        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-        <!-- Bootstrap 3.3.6 -->
-        <link rel="stylesheet" href="css/bootstrap.css">
-         <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-        <!-- Theme style -->
-        <link rel="stylesheet" href="css/AdminLTE.css">
-        <!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
-        <link rel="stylesheet" href="css/skins/_all-skins.min.css">
-</head>
-<script> var c=1;</script>
+<html><head>
+    <title>Virtual Labs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/labmenu.css" rel="stylesheet" type="text/css">
+  </head><body>
+<div class="row" style="background-color: #337AB7; height:10px;"></div>
+<!-- List of Experiments -->
+<div class="section text-left">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="list-group">
+                    <h3>
+                        <li class="list-group-item">
 
-<style>
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 100%;
-  background-color: "white";
-}
+                          <div  class="row">
+                               <div class="col-md-6 col-sm-6 col-lg-6" style="vertical-align:center">
+                                   <a href="page1.html">Assembly of Delta 3D Printer</a>
+                              </div>
+                             <div class="col-md-6 col-sm-6 col-lg-6"style="text-align:Right;" >
+                            </div>
+                         </div>
+                        </li>
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.container {
-  padding: 2px 16px;
-  background-color: "white";
-}
-</style>
-<script
-    src="https://code.jquery.com/jquery-3.4.1.js"
-    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
-<body style="background-color: aliceblue">
-<div class = row >
-  <div class = row style ="height:20px">
-  </div>
-  <div class ="col-sm-7 col-md-7" id="ass" style="padding-left:40px">
-
-
-  </div>
-  <div class ="col-sm-5 col-md-5"style="padding-right:40px" >
-  <div class = row >
-  <div class ="col-sm-6 col-md-6" >
-    <div class="card">
-          <img src="images/1.jpg" onclick="loadImg('images/n1.jpg',1)" alt="Avatar" style="height:20%; width:100%;">
-       <div class="container">
-         <h4><b>Base</b></h4>
-
-       </div>
-     </div>
- </div>
- <div class ="col-sm-6 col-md-6" >
-   <div class="card">
-      <img src="images/2.jpg" onclick="loadImg('images/n2.jpg',2)"  alt="Avatar" style="height:20%; width:100%;">
-      <div class="container">
-        <h4><b>Holder</b></h4>
-
+                    </h3>
+                </ul>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <div class = row style ="height:20px">
-      </div>
-      <div class = row >
-  <div class ="col-sm-6 col-md-6" >
-    <div class="card">
-         <img src="images/3.jpg" onclick="loadImg('images/n3.jpg',3)" alt="Avatar" style="height:20%; width:100%;">
-       <div class="container">
-         <h4><b>Rod</b></h4>
-       </div>
-     </div>
- </div>
- <div class ="col-sm-6 col-md-6" >
-   <div class="card">
-        <img src="images/4.jpg" onclick="loadImg('images/n4.jpg',4)"  alt="Avatar" style="height:20%; width:100%;">
-      <div class="container">
-        <h4><b>Top Cover</b></h4>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class = row style ="height:20px">
-      </div>
-      <div class = row >
-  <div class ="col-sm-6 col-md-6" >
-    <div class="card">
-         <img src="images/5.jpg" onclick="loadImg('images/n5.jpg',5)" alt="Avatar" style="height:20%; width:100%;">
-       <div class="container">
-         <h4><b>Top Cover Frame</b></h4>
-       </div>
-     </div>
- </div>
- <div class ="col-sm-6 col-md-6" >
-   <div class="card">
-        <img src="images/6.jpg" onclick="loadImg('images/n6.jpg',6)"  alt="Avatar" style="height:20%; width:100%;">
-      <div class="container">
-        <h4><b>Linear Rail</b></h4>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class = row style ="height:20px">
-      </div>
-      <div class = row >
-  <div class ="col-sm-6 col-md-6" >
-    <div class="card">
-         <img src="images/7.jpg" onclick="loadImg('images/n7.jpg',7)" alt="Avatar" style="height:20%; width:100%;">
-       <div class="container">
-         <h4><b>Motor</b></h4>
-       </div>
-     </div>
- </div>
- <div class ="col-sm-6 col-md-6" >
-   <div class="card">
-        <img src="images/8.jpg" onclick="loadImg('images/n8.jpg',8)"  alt="Avatar" style="height:20%; width:100%;">
-      <div class="container">
-        <h4><b>Base</b></h4>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class = row style ="height:20px">
-      </div>
-      <div class = row >
-  <div class ="col-sm-6 col-md-6" >
-    <div class="card">
-         <img src="images/9.jpg" onclick="loadImg('images/n9.jpg',9)" alt="Avatar" style="height:20%; width:100%;">
-       <div class="container">
-         <h4><b>Bed</b></h4>
-       </div>
-     </div>
- </div>
- <div class ="col-sm-6 col-md-6" >
-   <div class="card">
-        <img src="images/10.jpg" onclick="loadImg('images/n10.jpg',10)"  alt="Avatar" style="height:20%; width:100%;">
-      <div class="container">
-        <h4><b>Slide-With-Connector</b></h4>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class = row style ="height:20px">
-      </div>
-      <div class = row >
-  <div class ="col-sm-6 col-md-6" >
-    <div class="card">
-         <img src="images/11.jpg" onclick="loadImg('images/n11.jpg',11)" alt="Avatar" style="height:20%; width:100%;">
-       <div class="container">
-         <h4><b>Connecting-Rods</b></h4>
-       </div>
-     </div>
- </div>
- <div class ="col-sm-6 col-md-6" >
-   <div class="card">
-        <img src="images/12.jpg" onclick="loadImg('images/n12.jpg',12)"  alt="Avatar" style="height:20%; width:100%;">
-      <div class="container">
-        <h4><b>Extruder</b></h4>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class = row style ="height:20px">
-      </div>
-
-      <div class = row >
-  <div class ="col-sm-6 col-md-6" >
-    <div class="card">
-         <img src="images/13.jpg" onclick="loadImg('images/n13.jpg',13)" alt="Avatar" style="height:20%; width:100%;">
-       <div class="container">
-         <h4><b>Pins</b></h4>
-       </div>
-     </div>
- </div>
- <div class ="col-sm-6 col-md-6" >
-   <div class="card">
-        <img src="images/14.jpg" onclick="loadImg('images/n14.jpg',14)"  alt="Avatar" style="height:20%; width:100%;">
-      <div class="container">
-        <h4><b>Motor-with-Gear</b></h4>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class = row style ="height:20px">
-      </div>
-  <div class = row >
-  <div class ="col-sm-6 col-md-6" >
-    <div class="card">
-         <img src="images/15.jpg" onclick="loadImg('images/n15.jpg',15)"  alt="Avatar" style="height:20%; width:100%;">
-       <div class="container">
-         <h4><b>LCD</b></h4>
-
-       </div>
-     </div>
- </div>
- <p style="position:absolute;left:-2000px;"><input type="radio" id="1">
- <input type="radio" id="2">
- <input type="radio" id="3">
- <input type="radio" id="4">
- <input type="radio" id="5">
- <input type="radio" id="6">
- <input type="radio" id="7">
- <input type="radio" id="8">
- <input type="radio" id="9">
- <input type="radio" id="10">
- <input type="radio" id="11">
- <input type="radio" id="12">
- <input type="radio" id="13">
- <input type="radio" id="14">
- <input type="radio" id="15">
-</p>
-  </div>
 </div>
+<div class="section text-left">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="list-group">
+                    <h3>
+                        <li class="list-group-item">
+                          <div  class="row">
+                               <div class="col-md-6 col-sm-6 col-lg-6" style="vertical-align:center">
+                                   <a href="page2.html">Playing with Axes</a>
+                              </div>
+                             <div class="col-md-6 col-sm-6 col-lg-6"style="text-align:Right;" >
+                            </div>
+                         </div>
+                        </li>
 
+                    </h3>
+                </ul>
+            </div>
+        </div>
     </div>
 
-    <script>
-    function loadImg(pathImage,d)
-    {
-      if($('#1').is(':checked') && $('#2').is(':checked') && $('#3').is(':checked') && $('#4').is(':checked') && $('#5').is(':checked') && $('#6').is(':checked') && $('#7').is(':checked') && $('#8').is(':checked') && $('#9').is(':checked')  && $('#10').is(':checked')  && $('#11').is(':checked')  && $('#12').is(':checked')  && $('#13').is(':checked') && $('#14').is(':checked') && $('#15').is(':checked'))
-        {
-          alert("Assembly Completed.");
-        }
-      else { 
-
-          if($('#'+d).is(':checked'))
-          {
-                    if(!($('#1').is(':checked')))
-                    {
-                      alert("Please choose Base to start Assembly.");
-                    }
-                    else if (!($('#2').is(':checked'))) 
-                    {
-                      alert("Please choose  Holder.");
-                    }
-                     else if (!($('#3').is(':checked'))) 
-                    {
-                      alert("Please choose Rod.");
-                    }
-                     else if (!($('#4').is(':checked'))) 
-                    {
-                      alert("Please choose Top Cover.");
-                    }
-                     else if (!($('#5').is(':checked'))) 
-                    {
-                      alert("Please choose Top Cover Frame.");
-                    }
-                     else if (!($('#6').is(':checked'))) 
-                    {
-                      alert("Please choose Linear Rail.");
-                    }
-                     else if (!($('#7').is(':checked'))) 
-                    {
-                      alert("Please choose Motor.");
-                    }
-                     else if (!($('#8').is(':checked'))) 
-                    {
-                      alert("Please choose Base.");
-                    } 
-                    else if (!($('#9').is(':checked'))) 
-                    {
-                      alert("Please choose Bed.");
-                    }
-                      else if (!($('#10').is(':checked'))) 
-                    {
-                      alert("Please choose Slide-With-Connector.");
-                    }
-                      else if (!($('#11').is(':checked'))) 
-                    {
-                      alert("Please choose Connecting-Rods.");
-                    }
-                      else if (!($('#12').is(':checked'))) 
-                    {
-                      alert("Please choose Extruder.");
-                    }
-                      else if (!($('#13').is(':checked'))) 
-                    {
-                      alert("Please choose Pins.");
-                    }
-                     else if (!($('#14').is(':checked'))) 
-                    {
-                      alert("Please choose Motor-with-Gear.");
-                    }
-                     else if (!($('#15').is(':checked'))) 
-                    {
-                      alert("Please choose LCD.");
-                    }
-          }                             
-            
-          else
-            {         
-              if (d==1)
-                {
-                  var img = document.getElementById("ass");
-                  img.innerHTML = '<img src="'+pathImage+'" width="100%" height="70%">';
-                  $("#1").prop("checked",true);
-                }
-              else 
-                {
-                  for(var i=1;i<=d;i++)
-                    {
-                      if(i==d)
-                        {
-                          var img = document.getElementById("ass");
-                          img.innerHTML = '<img src="'+pathImage+'" width="100%" height="70%">';
-                          $("#"+d).prop("checked",true);
-                        }
-                      else
-                        {
-                          if(!($('#'+i).is(':checked'))) 
-                            { if(!($('#1').is(':checked')))
-                    {
-                      alert("You have to choose Base first.");
-                              break;  
-                    }
-                    else if (!($('#2').is(':checked'))) 
-                    {
-                      alert("You have to choose Holder.");
-                              break;  
-                    }
-                     else if (!($('#3').is(':checked'))) 
-                    {
-                      alert("You have to choose  Rod.");
-                              break;  
-                    }
-                     else if (!($('#4').is(':checked'))) 
-                    {
-                      alert("You have to choose Top Cover.");
-                              break;  
-                    }
-                     else if (!($('#5').is(':checked'))) 
-                    {
-                      alert("You have to choose Top Cover Frame.");
-                              break;  
-                    } 
-                    else if (!($('#6').is(':checked'))) 
-                    {
-                      alert("You have to choose Linear Rail.");
-                              break;  
-                    } 
-                    else if (!($('#7').is(':checked'))) 
-                    {
-                      alert("You have to choose Motor.");
-                              break;  
-                    } 
-                    else if (!($('#8').is(':checked'))) 
-                    {
-                      alert("You have to choose Base.");
-                              break;  
-                    } 
-                    else if (!($('#9').is(':checked'))) 
-                    {
-                      alert("You have to choose Bed.");
-                              break;  
-                    } 
-                     else if (!($('#10').is(':checked'))) 
-                    {
-                      alert("You have to choose Slide-With-Connector.");
-                              break;  
-                    } 
-                     else if (!($('#11').is(':checked'))) 
-                    {
-                      alert("You have to choose Connecting-Rods.");
-                              break;  
-                    } 
-                     else if (!($('#12').is(':checked'))) 
-                    {
-                      alert("You have to choose Extruder.");
-                              break;  
-                    } 
-                     else if (!($('#13').is(':checked'))) 
-                    {
-                      alert("You have to choose Pins.");
-                              break;  
-                    } 
-                     else if (!($('#14').is(':checked'))) 
-                    {
-                      alert("You have to choose Motor-with-Gear.");
-                              break;  
-                    } 
-                     else if (!($('#15').is(':checked'))) 
-                    {
-                      alert("You have to choose LCD.");
-                              break;  
-                    } 
-                            }
-                        }             
-                    }
-                }
-            }
-        }
-    }
-
-    </script>
-
-    <div id="page2" align="center">
-      <a href="page2.html">Playing with axes</a>
-    </div>
-
-    </body>
-    </html>
+</div>
+<div class="footer" style="height: 200px; background: white">
+</div>
+</body>
+</html>
